@@ -1,6 +1,8 @@
 # flask-gpt
 Prototype ChatGPT clone written in flask
 
+Inspired by https://github.com/blessinvarkey/gpt3-flask-bot
+
 Install requirements
 ```commandline
 pip3 install -r requirements.txt 
