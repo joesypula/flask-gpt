@@ -12,7 +12,7 @@ Install gunicorn
 pip3 install gunicorn
 ```
 
-Create `config.py` and add Open API Key
+Create `config.py` and add OpenAI API Key
 
 ```commandline
 API_KEY = "sk-xxxxxx"
