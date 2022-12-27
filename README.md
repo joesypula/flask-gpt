@@ -23,3 +23,7 @@ Run server using `flask-gpt-uWSGI-conf.py`
 ```commandline
 gunicorn -c flask-gpt-uWSGI-conf.py app:app
 ```
+
+The Server will run on the port according to the configuration the default is `http://0.0.0.0:443`
+
+![screenshot](static/img.png)
