@@ -1,0 +1,97 @@
+body {
+    font-family: monospace;
+}
+
+h1 {
+    text-align: center;
+    background-color: #D3D3D3;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+}
+
+#chatbox {
+    margin-left: auto;
+    margin-right: auto;
+    width: 55%;
+    margin-top: 60px;
+}
+
+#userInput {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    margin-top: 60px;
+}
+
+#textInput {
+    width: 90%;
+    border: none;
+    border-bottom: 3px solid black;
+    font-family: monospace;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.userText {
+    color: black;
+    font-family: monospace;
+    font-size: 15px;
+    text-align: right;
+    line-height: 30px;
+    border-radius: 5px;
+    margin-top: 25px;
+}
+
+.userText span {
+    background-color: #ffb3b3;
+    padding: 10px;
+    border-radius: 7px;
+    box-shadow: 8px 7px 6px 5px #888888;
+}
+
+.botText {
+    color: black;
+    font-family: monospace;
+    font-size: 15px;
+    text-align: left;
+    line-height: 30px;
+    background-color: #ffffff;
+    border-radius: 7px;
+    box-shadow: 8px 7px 6px 5px #888888;
+}
+
+.botText span {
+    padding: 10px;
+    border-radius: 2px;
+}
+
+#tidbit {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+}
+
+.boxed {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    margin-top: 60px;
+
+}
+
+.box {
+    border: 2px solid black;
+}
+
+#button {
+    border-radius: 25px;
+    text-align: center;
+}
+
+#downloadLink {
+    border-radius: 25px;
+    text-align: center;
+}

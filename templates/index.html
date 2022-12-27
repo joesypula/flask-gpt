@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<title>ChatBot</title>
+
+<head>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" media="all">
+</head>
+
+<body>
+<div class="boxed">
+    <div>
+        <h1>ChatBot
+        </h1>
+        <div id="button">
+            <button id="clearbutton" onclick="clearConversation()">Clear Conversation</button>
+            <button id="savebutton" onclick="downloadConversation()">Save Conversation</button>
+        </div>
+        <div id="chatbox">
+            <span><img src="{{ url_for('static', filename='pixel_bender.png') }}" alt="Hello" width="25"></span>
+            <span>
+            <p class="botText">
+              <span>Hi! I'm ChatBot, powered by GPT-3. Ask me anything!</span>
+            </p>
+          </span>
+        </div>
+        <div id="userInput">
+            <input id="textInput" type="text" name="msg" placeholder="Enter message here... then press ↵"/>
+        </div>
+    </div>
+</div>
+
+<!-- Load jQuery from a CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Load the local scripts asynchronously -->
+<script async src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+
+</html>
