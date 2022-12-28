@@ -5,7 +5,6 @@ import json
 import logging
 from logging.handlers import RotatingFileHandler
 import openai
-import config
 from flask import Flask, render_template, request, make_response
 
 app = Flask(__name__)
@@ -28,9 +27,8 @@ handler.setFormatter(formatter)
 # Add the handler to the logger
 logger.addHandler(handler)
 
-# Create an openaiapikey.txt file and save your api key.
-openai.api_key = config.API_KEY
-
+# Get API key from env
+openai.api_key = os.environ.get("OPENAI_API_KEY")
 
 def get_response_from_openai(prompt, engine='text-davinci-003', temp=0.9, top_p=1.0, tokens=1000, freq_pen=0.0,
                              pres_pen=0.5):

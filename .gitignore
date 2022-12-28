@@ -132,3 +132,4 @@ dmypy.json
 
 #config file for secrets
 config.py
+/.idea/flask-gpt.iml

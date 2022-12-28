@@ -13,7 +13,7 @@ function getBotResponse() {
     userText = userText.replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
     var chatbox = $('#chatbox');
-    chatbox.append('<div class="userText"><span>' + userText + '</span></div>');
+    chatbox.append('<div class="userText"><div class=userIcon ><img src="/static/fry.png" alt="fry" width="40"></div><span>' + userText + '</span></div>');
     //// Clear the text input field
     $('#textInput').val('');
     // Cancel the previous timeout if it exists

@@ -1,0 +1,1 @@
+web: gunicorn -c flask-gpt-uWSGI-conf.py app:app

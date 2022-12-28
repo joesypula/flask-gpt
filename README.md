@@ -26,6 +26,19 @@ Run server using `flask-gpt-uWSGI-conf.py`
 gunicorn -c flask-gpt-uWSGI-conf.py app:app
 ```
 
+If you want to build a container run 
+
+```commandline
+docker build -t flask-gpt . 
+```
+
+Then pass the OPENAI API key as an env variable
+
+```commandline
+docker run -p 443:443 -e OPENAI_API_KEY="sk-xxx" flask-gpt
+```
+
 The Server will run on the port according to the configuration the default is `http://0.0.0.0:443`
 
 ![screenshot](static/img.png)
+

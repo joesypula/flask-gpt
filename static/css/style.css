@@ -44,6 +44,12 @@ h1 {
     margin-top: 25px;
 }
 
+.userIcon {
+    color: black;
+    font-family: monospace;
+    text-align: right;
+}
+
 .userText span {
     background-color: #ffb3b3;
     padding: 10px;
