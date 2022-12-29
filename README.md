@@ -1,5 +1,5 @@
 # flask-gpt
-Prototype ChatGPT clone written in flask
+Prototype chatbot written in flask using OpenAI GPT3
 
 Inspired by https://github.com/blessinvarkey/gpt3-flask-bot
 
